@@ -1,0 +1,11 @@
+project: savantenvs/incubator-pegasus
+target: fuzz-host-port
+
+cmds:
+  - cmd: /mayhem/fuzz_host_port
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-host-port/testsuite

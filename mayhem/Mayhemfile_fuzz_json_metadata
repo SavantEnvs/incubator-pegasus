@@ -1,0 +1,11 @@
+project: savantenvs/incubator-pegasus
+target: fuzz-json-metadata
+
+cmds:
+  - cmd: /mayhem/fuzz_json_metadata
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-json-metadata/testsuite

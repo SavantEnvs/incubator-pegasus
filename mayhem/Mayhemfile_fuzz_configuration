@@ -1,0 +1,11 @@
+project: savantenvs/incubator-pegasus
+target: fuzz-configuration
+
+cmds:
+  - cmd: /mayhem/fuzz_configuration
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-configuration/testsuite

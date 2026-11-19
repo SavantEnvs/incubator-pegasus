@@ -1,0 +1,1 @@
+{"pc":{"pid":"1.0","ballot":3,"max_replica_count":3,"primary":"127.0.0.1:34801","secondaries":[],"last_drops":[],"last_committed_decree":0,"partition_flags":0}}
